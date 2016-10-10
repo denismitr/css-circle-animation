@@ -1,0 +1,95 @@
+html, body {
+    height: 100%;
+}
+
+body {}
+
+.wrap {
+    background: blue;
+    width: 300px;
+    height: 300px;
+}
+
+.is-centered-xy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.is-circle {
+    border-radius: 50%;
+}
+
+.object {
+    width: 30px;
+    height: 30px;
+    transform: translate(150px);
+    position: absolute;
+}
+
+/*.object:nth-child(odd) {
+    animation-direction: reverse;
+}*/
+
+.object:hover {
+    animation-play-state: paused !important;
+}
+
+.is-a {
+    background: red;
+    animation: rotate-a 15s linear infinite;
+}
+
+.is-b {
+    background: orange;
+    /*animation-delay: 0.4s;*/
+    animation: rotate-b 15s linear infinite;
+}
+
+.is-c {
+    background: pink;
+    /*animation-delay: 0.9s;*/
+    animation: rotate-c 15s linear infinite;
+}
+
+.is-d {
+    background: yellow;
+    /*animation-delay: 3.7s;*/
+    animation: rotate-d 15s linear infinite;
+}
+
+@keyframes rotate-a {
+    from {
+        transform: rotate(0deg) translateX(130px);
+    }
+    to {
+        transform: rotate(360deg) translateX(130px);
+    }
+}
+
+@keyframes rotate-b {
+    from {
+        transform: rotate(0deg) translateX(-150px);
+    }
+    to {
+        transform: rotate(360deg) translateX(-150px);
+    }
+}
+
+@keyframes rotate-c {
+    from {
+        transform: rotate(0deg) translateY(100px);
+    }
+    to {
+        transform: rotate(360deg) translateY(100px);
+    }
+}
+
+@keyframes rotate-d {
+    from {
+        transform: rotate(0deg) translateY(-90px);
+    }
+    to {
+        transform: rotate(360deg) translateY(-90px);
+    }
+}
